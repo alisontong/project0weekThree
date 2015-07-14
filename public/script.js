@@ -7,7 +7,7 @@ $(function() {
     template: _.template($('#blog-template').html()),
 
     all: function() {
-      $.get('/api/blogs', function(data) {
+      $.getJSON('/api/blogs', function(data) {
         var allBlogs = data;
         
         // iterate through allBlogs
